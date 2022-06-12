@@ -14134,7 +14134,7 @@ div.jp-OutputPrompt {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
 <span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]</span>
 <span class="n">logreg</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">logreg</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">logreg</span><span class="p">,</span> <span class="s1">&#39;Regressão Logística&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="p">[</span><span class="n">C</span><span class="p">])</span>
+<span class="n">logreg</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">logreg</span><span class="p">,</span> <span class="s1">&#39;Regressão Logística&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="p">[</span><span class="n">C</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14327,8 +14327,8 @@ weighted avg       0.76      0.76      0.75     30200
 <span class="n">max_depth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 <span class="n">min_samples_split</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">400</span><span class="p">]</span>
 <span class="n">dtc</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">dtc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">dtc</span><span class="p">,</span> <span class="s1">&#39;Decision Tree&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="p">[</span><span class="n">max_depth</span><span class="p">,</span> 
-                                                                               <span class="n">min_samples_split</span><span class="p">])</span>
+<span class="n">dtc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">dtc</span><span class="p">,</span> <span class="s1">&#39;Decision Tree&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="p">[</span><span class="n">max_depth</span><span class="p">,</span> 
+                                                               <span class="n">min_samples_split</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14522,9 +14522,9 @@ weighted avg       0.86      0.86      0.86     30200
 <span class="n">max_depth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 <span class="n">min_samples_split</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">400</span><span class="p">]</span>
 <span class="n">rfc</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">rfc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">rfc</span><span class="p">,</span> <span class="s1">&#39;Random Forest&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="p">[</span><span class="n">estimators</span><span class="p">,</span>
-                                                                               <span class="n">max_depth</span><span class="p">,</span>
-                                                                               <span class="n">min_samples_split</span><span class="p">])</span>
+<span class="n">rfc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">rfc</span><span class="p">,</span> <span class="s1">&#39;Random Forest&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="p">[</span><span class="n">estimators</span><span class="p">,</span>
+                                                               <span class="n">max_depth</span><span class="p">,</span>
+                                                               <span class="n">min_samples_split</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14718,9 +14718,9 @@ weighted avg       0.87      0.87      0.87     30200
 <span class="n">max_depth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> 
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="n">gbc</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">gbc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">gbc</span><span class="p">,</span> <span class="s1">&#39;Gradient Boosting&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="p">[</span><span class="n">estimators</span><span class="p">,</span>
-                                                                                   <span class="n">max_depth</span><span class="p">,</span>
-                                                                                   <span class="n">learning_rate</span><span class="p">])</span>
+<span class="n">gbc</span> <span class="o">=</span> <span class="n">find_parameters</span><span class="p">(</span><span class="n">gbc</span><span class="p">,</span> <span class="s1">&#39;Gradient Boosting&#39;</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="p">[</span><span class="n">estimators</span><span class="p">,</span>
+                                                                   <span class="n">max_depth</span><span class="p">,</span>
+                                                                   <span class="n">learning_rate</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14965,7 +14965,7 @@ weighted avg       0.88      0.88      0.88     30200
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Na primeira parte um gráfico que chamou muita atenção foi o seguinte:</p>
-<p><img src = "download.png" width = "1200" alt></p>
+<p><img src = "Imagens_A1/A1_1.png" width = "1200" alt></p>
 <p>Onde pudemos ver que essas duas variáveis conseguem separar bem os grupos. Assim, poderíamos dizer que "pessoas que reservam vagas de estacionamento ou fazem pedidos especiais não irão cancelar a reserva".</p>
 <p>Como a ideia por trás das árvores de decisão segue uma ideia similar aos processos de decisão de nós, seres humanos, podemos ver de que modo tais decisões são realizadas pelo modelo.</p>
 
